@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "gi-happysteps-tai-chi-56a46c023df78cf772825b76.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
