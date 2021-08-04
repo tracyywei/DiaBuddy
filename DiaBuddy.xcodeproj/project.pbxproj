@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0DC16A26BAD9E9004E7A8D /* WellnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC16926BAD9E9004E7A8D /* WellnessViewController.swift */; };
+		DC0DC16C26BAD9FC004E7A8D /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC16B26BAD9FC004E7A8D /* RecommendViewController.swift */; };
+		DC0DC16E26BADA14004E7A8D /* DiagnosticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC16D26BADA14004E7A8D /* DiagnosticViewController.swift */; };
+		DC0DC17026BADA23004E7A8D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC16F26BADA23004E7A8D /* TestViewController.swift */; };
+		DC0DC17226BADA43004E7A8D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC17126BADA43004E7A8D /* ResultsViewController.swift */; };
+		DC0DC17426BADA5C004E7A8D /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC17326BADA5C004E7A8D /* LogTableViewController.swift */; };
 		DC9EBB9B26B9AFE50088B27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EBB9A26B9AFE50088B27F /* AppDelegate.swift */; };
 		DC9EBB9D26B9AFE50088B27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EBB9C26B9AFE50088B27F /* SceneDelegate.swift */; };
 		DC9EBB9F26B9AFE50088B27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EBB9E26B9AFE50088B27F /* ViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0DC16926BAD9E9004E7A8D /* WellnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessViewController.swift; sourceTree = "<group>"; };
+		DC0DC16B26BAD9FC004E7A8D /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		DC0DC16D26BADA14004E7A8D /* DiagnosticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticViewController.swift; sourceTree = "<group>"; };
+		DC0DC16F26BADA23004E7A8D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DC0DC17126BADA43004E7A8D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		DC0DC17326BADA5C004E7A8D /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 		DC9EBB9726B9AFE50088B27F /* DiaBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9EBB9A26B9AFE50088B27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC9EBB9C26B9AFE50088B27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +78,12 @@
 				DC9EBBA826B9AFE80088B27F /* LaunchScreen.storyboard */,
 				DC9EBBAB26B9AFE80088B27F /* Info.plist */,
 				DC9EBBA326B9AFE50088B27F /* DiaBuddy.xcdatamodeld */,
+				DC0DC16926BAD9E9004E7A8D /* WellnessViewController.swift */,
+				DC0DC16B26BAD9FC004E7A8D /* RecommendViewController.swift */,
+				DC0DC16D26BADA14004E7A8D /* DiagnosticViewController.swift */,
+				DC0DC16F26BADA23004E7A8D /* TestViewController.swift */,
+				DC0DC17126BADA43004E7A8D /* ResultsViewController.swift */,
+				DC0DC17326BADA5C004E7A8D /* LogTableViewController.swift */,
 			);
 			path = DiaBuddy;
 			sourceTree = "<group>";
@@ -140,10 +158,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0DC16E26BADA14004E7A8D /* DiagnosticViewController.swift in Sources */,
 				DC9EBB9F26B9AFE50088B27F /* ViewController.swift in Sources */,
+				DC0DC17426BADA5C004E7A8D /* LogTableViewController.swift in Sources */,
+				DC0DC17026BADA23004E7A8D /* TestViewController.swift in Sources */,
 				DC9EBB9B26B9AFE50088B27F /* AppDelegate.swift in Sources */,
 				DC9EBB9D26B9AFE50088B27F /* SceneDelegate.swift in Sources */,
+				DC0DC17226BADA43004E7A8D /* ResultsViewController.swift in Sources */,
+				DC0DC16A26BAD9E9004E7A8D /* WellnessViewController.swift in Sources */,
 				DC9EBBA526B9AFE50088B27F /* DiaBuddy.xcdatamodeld in Sources */,
+				DC0DC16C26BAD9FC004E7A8D /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
