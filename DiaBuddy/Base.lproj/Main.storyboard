@@ -180,6 +180,18 @@
                                     <action selector="restartTest:" destination="jsU-jk-amY" eventType="touchUpInside" id="GDG-UX-gef"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRe-17-3Q0">
+                                <rect key="frame" x="246" y="701" width="148" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Submit test &gt;">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQ:" destination="jsU-jk-amY" eventType="touchUpInside" id="YaL-9N-Hvc"/>
+                                    <action selector="submitTest:" destination="jsU-jk-amY" eventType="touchUpInside" id="Hp9-XG-Epg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mrf-d4-d5c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -192,6 +204,7 @@
                         <outlet property="questionLabel" destination="Aio-pI-O6f" id="Jiu-JS-x9a"/>
                         <outlet property="questionNum" destination="m5o-CK-hfz" id="9HX-dA-RtZ"/>
                         <outlet property="restartButton" destination="D84-Un-gLL" id="J40-4s-qg1"/>
+                        <outlet property="submitButton" destination="iRe-17-3Q0" id="wju-9H-AkQ"/>
                         <outlet property="yesButton" destination="SRs-y6-oZt" id="JXr-Oo-Ugp"/>
                         <segue destination="8Xp-2f-KEq" kind="show" identifier="moveToTestResults" id="8al-fT-cEV"/>
                     </connections>

@@ -16,6 +16,7 @@ class TestViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var submitButton: UIButton!
     
     var score = 0
     var questionCount = 0
@@ -44,6 +45,7 @@ class TestViewController: UIViewController {
         noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
         messageLabel.isHidden = true
         nextButton.isHidden = true
+        submitButton.isHidden = true
     }
     
     @IBAction func yesTapped(_ sender: UIButton) {
@@ -80,14 +82,14 @@ class TestViewController: UIViewController {
             messageLabel.text = "Correct. \(messages[questionCount])"
         }
         else {
-            messageLabel.text = "Incorret. \(messages[questionCount])"
+            messageLabel.text = "Incorrect. \(messages[questionCount])"
         }
         lastQ(currentNum: questionCount)
     }
     
     @IBAction func nextQ(_ sender: UIButton) {
         
-        if questionCount == 3 {
+        if questionCount == 5 {
             nextButton.isHidden = true
         }
         else {
@@ -101,9 +103,10 @@ class TestViewController: UIViewController {
     }
     
     func lastQ(currentNum : Int) {
-        if currentNum == 3 {
+        if currentNum == 5 {
             restartButton.isHidden = false
-            performSegue(withIdentifier: "moveToTestResults", sender: nextButton)
+            submitButton.isHidden = false
+            nextButton.isHidden = true
         }
     }
     
@@ -116,6 +119,11 @@ class TestViewController: UIViewController {
         yesButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
         noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
         messageLabel.isHidden = true
+        submitButton.isHidden = true
+    }
+    
+    @IBAction func submitTest(_ sender: UIButton) {
+        performSegue(withIdentifier: "moveToTestResults", sender: nextButton)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
