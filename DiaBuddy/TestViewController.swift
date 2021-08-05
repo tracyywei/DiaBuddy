@@ -55,6 +55,12 @@ class TestViewController: UIViewController {
             score += 1
             messageLabel.text = "Correct. \(messages[questionCount])"
         }
+        
+        else if (questionCount == 0) {
+            score += 1
+            messageLabel.text = "\(messages[0])"
+        }
+        
         else {
             messageLabel.text = "Incorrect. \(messages[questionCount])"
         }
