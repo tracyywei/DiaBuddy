@@ -24,10 +24,14 @@ class TestViewController: UIViewController {
                      "Are diabetics recommended to eat fried foods?",
                      "Are diabetics immunocompromised?",
                      "Can a person be diagnosed with diabetes at an older age (50-70+)?",
+                     "Is blood sugar the same as glucose?" ,
+                     "Is our diagnostic test more accurate than pharmaceutical screening tests?"
                     ]
     
     // Fill in the array with the messages for each question
-    // var messages = []
+    var messages = ["Type 1 diabetes is diabetes that is diagnosed in children and young adults. The form of treatment in type 1 diabetes is insulin, as the form of treatment in type 2 diabetes with an unknown cause (i.e genetically or because of obesity) is treated with medication, diets, and exercise.", "Specifically for Type 2 diabetics, fried food is not a good addition to their diet. It can cause weight gain, furthering the severity of their diabetes." , "Whether a diabetic is well controlled or not, all diabetics are immunocompromised. This means that their immune system is weaker than a typical person’s immune system. (https://www.pennmedicine.org)" , "Most people are diagnosed at a young age, but it is possible! Type 2 diabetes is typically more undiagnosed/diagnosed in older adults. " , "Yes, they are! Blood sugar/glucose flow through your bloodstream, and they are also the sources of energy you get from the foods you consume." , "No! Our diagnostic test is available just to give you an idea if you might be at risk of diabetes, or pre-diabetic. We definitely recommend getting a professional screening test if you are experiencing pre-diabetic symptoms!",
+
+]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,22 +47,32 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func yesTapped(_ sender: UIButton) {
-        if questionCount != 1 {
-            score += 1
-        }
         nextButton.isHidden = false
         yesButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        // ADD: change message label to the right explanation
+        messageLabel.isHidden = false
+        
+        if questionCount != 1 && questionCount != 5 {
+            score += 1
+            messageLabel.text = "Correct. \(messages[questionCount])"
+        }
+        else {
+            messageLabel.text = "Incorrect. \(messages[questionCount])"
+        }
         lastQ(currentNum: questionCount)
     }
     
     @IBAction func noTapped(_ sender: UIButton) {
-        if questionCount == 1 {
-            score += 1
-        }
         nextButton.isHidden = false
         noButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        // ADD: change message label to the right explanation
+        messageLabel.isHidden = false
+        
+        if questionCount == 1 || questionCount == 5 {
+            score += 1
+            messageLabel.text = "Correct. \(messages[questionCount])"
+        }
+        else {
+            messageLabel.text = "Incorret. \(messages[questionCount])"
+        }
         lastQ(currentNum: questionCount)
     }
     
