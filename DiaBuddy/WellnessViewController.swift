@@ -56,8 +56,6 @@ class WellnessViewController: UIViewController {
         glucoseLevel.text = ""
         exerciseMin.text = ""
         cholesterol.text = ""
-        mood = ""
-        feetCondition = ""
         cutsButton.backgroundColor = #colorLiteral(red: 0.8352941176, green: 0.9490196078, blue: 1, alpha: 1)
         swellingButton.backgroundColor = #colorLiteral(red: 0.8352941176, green: 0.9490196078, blue: 1, alpha: 1)
         cornButton.backgroundColor = #colorLiteral(red: 0.8352941176, green: 0.9490196078, blue: 1, alpha: 1)
