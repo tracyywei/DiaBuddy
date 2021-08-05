@@ -7,6 +7,17 @@
 
 import UIKit
 
+class RecordTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var glucose: UILabel!
+    @IBOutlet weak var exerciseTime: UILabel!
+    @IBOutlet weak var feet: UILabel!
+    @IBOutlet weak var mood: UILabel!
+    
+}
+
 class LogTableViewController: UITableViewController {
 
     override func viewDidLoad() {
