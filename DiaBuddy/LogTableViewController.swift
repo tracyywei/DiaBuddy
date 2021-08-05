@@ -7,6 +7,27 @@
 
 import UIKit
 
+class Record {
+    
+    var date = ""
+    var time = ""
+    var glucose = ""
+    var exercise = ""
+    var feet = ""
+    var mood = ""
+    var chl = ""
+    
+    init(myDate: String, myTime: String, myGlucose: String, myExercise: String, myFeet: String, myMood: String, myChl: String) {
+        date = myDate
+        time = myTime
+        glucose = myGlucose
+        exercise = myExercise
+        feet = myFeet
+        mood = myMood
+        chl = myChl
+    }
+}
+
 class RecordTableViewCell: UITableViewCell {
     
     @IBOutlet weak var date: UILabel!
@@ -15,42 +36,56 @@ class RecordTableViewCell: UITableViewCell {
     @IBOutlet weak var exerciseTime: UILabel!
     @IBOutlet weak var feet: UILabel!
     @IBOutlet weak var mood: UILabel!
+    @IBOutlet weak var cholesterol: UILabel!
     
 }
 
 class LogTableViewController: UITableViewController {
 
+    var date = ""
+    var time = ""
+    var mood = ""
+    var feetCondition = ""
+    var glucose = ""
+    var cholesterol = ""
+    var exercise = ""
+    
+    var records = [Record]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        records.append(Record(myDate: date, myTime: time, myGlucose: glucose, myExercise: exercise, myFeet: feetCondition, myMood: mood, myChl: cholesterol))
+        
+        tableView.rowHeight = 150
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return records.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! RecordTableViewCell
 
-        // Configure the cell...
+
+        let displayedRecord = records[indexPath.row]
+        cell.date.text = displayedRecord.date
+        cell.time.text = displayedRecord.time
+        cell.glucose.text = "Glucose: \(displayedRecord.glucose) mg/dl"
+        cell.exerciseTime.text = "Exercise: \(displayedRecord.exercise) minutes"
+        cell.feet.text = "Feet: \(displayedRecord.feet)"
+        cell.mood.text = "Mood: \(displayedRecord.mood)"
+        cell.cholesterol.text = "Cholesterol: \(displayedRecord.chl) mg/dl"
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

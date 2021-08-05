@@ -51,14 +51,14 @@ class TestViewController: UIViewController {
         yesButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         messageLabel.isHidden = false
         
-        if questionCount != 1 && questionCount != 5 {
-            score += 1
-            messageLabel.text = "Correct. \(messages[questionCount])"
-        }
-        
-        else if (questionCount == 0) {
+        if (questionCount == 0) {
             score += 1
             messageLabel.text = "\(messages[0])"
+        }
+        
+        else if questionCount != 1 && questionCount != 5 {
+            score += 1
+            messageLabel.text = "Correct. \(messages[questionCount])"
         }
         
         else {
@@ -72,7 +72,10 @@ class TestViewController: UIViewController {
         noButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         messageLabel.isHidden = false
         
-        if questionCount == 1 || questionCount == 5 {
+        if (questionCount == 0) {
+            messageLabel.text = "\(messages[0])"
+        }
+        else if questionCount == 1 || questionCount == 5 {
             score += 1
             messageLabel.text = "Correct. \(messages[questionCount])"
         }

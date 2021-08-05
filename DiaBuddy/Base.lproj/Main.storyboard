@@ -288,8 +288,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA9-eJ-jqp">
-                                <rect key="frame" x="39" y="157" width="336" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With the risk of obesity being passed from genes, the risk of type 2 diabetes is also passed. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA9-eJ-jqp">
+                                <rect key="frame" x="39" y="157" width="336" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAM-iH-KcI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2274" y="96"/>
+            <point key="canvasLocation" x="2273.913043478261" y="95.758928571428569"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="TPo-sf-NaG">
@@ -628,27 +628,27 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="calendar-icon"/>
                                         <connections>
-                                            <segue destination="fsC-82-GLE" kind="showDetail" id="HvY-I7-gfp"/>
+                                            <segue destination="0gL-na-fY3" kind="show" id="vnM-i0-vbD"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.78823529410000004" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Glucose Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-CU-kwL">
-                                <rect key="frame" x="37" y="179" width="171" height="33"/>
+                                <rect key="frame" x="37" y="149" width="171" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7M-ST-H6W">
-                                <rect key="frame" x="224" y="178" width="76" height="34"/>
+                                <rect key="frame" x="224" y="148" width="76" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/dl" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-2w-aWk">
-                                <rect key="frame" x="329" y="185" width="49" height="21"/>
+                                <rect key="frame" x="329" y="155" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -663,6 +663,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="recordCheck:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="5AM-Nk-IcO"/>
                                     <action selector="yesTapped:" destination="jsU-jk-amY" eventType="touchUpInside" id="hGy-C9-z2D"/>
                                 </connections>
                             </button>
@@ -674,27 +675,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I exercised for" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-Sp-X4E">
-                                <rect key="frame" x="37" y="239" width="171" height="33"/>
+                                <rect key="frame" x="37" y="233" width="171" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32s-Ke-oVH">
-                                <rect key="frame" x="224" y="238" width="76" height="34"/>
+                                <rect key="frame" x="224" y="232" width="76" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="minutes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLY-H2-Ef0">
-                                <rect key="frame" x="297" y="245" width="81" height="21"/>
+                                <rect key="frame" x="297" y="239" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My feet have:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inI-D2-tMD">
-                                <rect key="frame" x="37" y="303" width="171" height="33"/>
+                                <rect key="frame" x="34" y="291" width="171" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -707,28 +708,142 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="q5e-40-pM2">
-                                <rect key="frame" x="29" y="505" width="88" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-Dx-hc2">
+                                <rect key="frame" x="29" y="333" width="171" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="c4R-9q-hUe">
-                                <rect key="frame" x="120" y="505" width="88" height="77"/>
+                                <color key="backgroundColor" red="0.83353279329999996" green="0.95069082360000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Cuts">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cutsTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="VTY-kd-VTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-cg-CYa">
+                                <rect key="frame" x="29" y="381" width="171" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meh" translatesAutoresizingMaskIntoConstraints="NO" id="OXI-jG-sv2">
-                                <rect key="frame" x="213" y="505" width="88" height="77"/>
+                                <color key="backgroundColor" red="0.83353279329999996" green="0.95069082360000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Swelling">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="swellTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="wKu-GR-zjL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjh-jl-ead">
+                                <rect key="frame" x="209" y="332" width="171" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icky" translatesAutoresizingMaskIntoConstraints="NO" id="rdP-8w-xiw">
-                                <rect key="frame" x="306" y="505" width="88" height="77"/>
+                                <color key="backgroundColor" red="0.83353279329999996" green="0.95069082360000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Sores/Blisters">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="soreTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="fs4-Ic-pBC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO2-a8-wKs">
+                                <rect key="frame" x="209" y="381" width="171" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.83353279329999996" green="0.95069082360000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Corns/Calluses">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cornTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="IlF-xA-Xap"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-nf-6wc">
+                                <rect key="frame" x="20" y="724" width="115" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <state key="normal" title=" Reset form" image="restart.circle" catalog="system">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQ:" destination="jsU-jk-amY" eventType="touchUpInside" id="R29-0j-1qm"/>
+                                    <action selector="resetForm:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="46A-rs-oEH"/>
+                                    <action selector="restartTest:" destination="jsU-jk-amY" eventType="touchUpInside" id="Cnl-eh-TyJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cholesterol Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPM-30-9lq">
+                                <rect key="frame" x="37" y="189" width="202" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-Jw-hMi">
+                                <rect key="frame" x="224" y="190" width="76" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/dl" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-Oe-JzD">
+                                <rect key="frame" x="329" y="195" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-pn-drz">
+                                <rect key="frame" x="30" y="502" width="83" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="happy"/>
+                                <connections>
+                                    <action selector="happyTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="QPr-Gm-Fj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE9-7e-P7X">
+                                <rect key="frame" x="121" y="499" width="83" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sad"/>
+                                <connections>
+                                    <action selector="sadTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="abP-aR-W2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffW-Ie-3bZ">
+                                <rect key="frame" x="215" y="499" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="meh"/>
+                                <connections>
+                                    <action selector="mehTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="0hI-Vt-FoE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2c-bN-cyf">
+                                <rect key="frame" x="304" y="499" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icky"/>
+                                <connections>
+                                    <action selector="ickyTapped:" destination="gB1-Ii-aNX" eventType="touchUpInside" id="WUt-cg-OZW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZJZ-ik-grA"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wellness Check" image="bolt.heart.fill" catalog="system" id="drV-96-cvi"/>
                     <navigationItem key="navigationItem" id="nDY-ai-4fP"/>
+                    <connections>
+                        <outlet property="cholesterol" destination="4Ca-Jw-hMi" id="QBf-c8-y8L"/>
+                        <outlet property="cornButton" destination="lO2-a8-wKs" id="pQM-gr-hLY"/>
+                        <outlet property="cutsButton" destination="tK4-Dx-hc2" id="LMI-wv-QSD"/>
+                        <outlet property="exerciseMin" destination="32s-Ke-oVH" id="tKA-XJ-jKi"/>
+                        <outlet property="glucoseLevel" destination="M7M-ST-H6W" id="P70-Fl-0J4"/>
+                        <outlet property="happyButton" destination="ww6-pn-drz" id="hnr-Iq-09s"/>
+                        <outlet property="ickyButton" destination="N2c-bN-cyf" id="WUC-rZ-8h4"/>
+                        <outlet property="mehButton" destination="ffW-Ie-3bZ" id="qz9-1E-c2o"/>
+                        <outlet property="messageLabel" destination="Wq2-bA-FVg" id="seg-Cn-tDH"/>
+                        <outlet property="recordButton" destination="qcF-N1-j6N" id="k0h-Zt-C5M"/>
+                        <outlet property="resetButton" destination="Gwc-nf-6wc" id="5NP-ld-XFG"/>
+                        <outlet property="sadButton" destination="qE9-7e-P7X" id="sUG-Dt-Ou6"/>
+                        <outlet property="soreButton" destination="kjh-jl-ead" id="sw1-Kv-gq6"/>
+                        <outlet property="swellingButton" destination="jHU-cg-CYa" id="K8G-1c-pzf"/>
+                        <segue destination="0gL-na-fY3" kind="show" identifier="moveToLog" id="oPf-ok-YAv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8l-X0-at2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -751,21 +866,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00/00/0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gri-fM-91U">
-                                            <rect key="frame" x="27" y="11" width="92" height="21"/>
+                                            <rect key="frame" x="27" y="11" width="101" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Glucose: -- mg/dl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWM-w6-MOf">
-                                            <rect key="frame" x="27" y="34" width="134" height="21"/>
+                                            <rect key="frame" x="27" y="34" width="185" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise: -- min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpu-FA-6YH">
-                                            <rect key="frame" x="27" y="55" width="120" height="21"/>
+                                            <rect key="frame" x="27" y="55" width="185" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -792,8 +907,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insulin shots: --" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-Gv-Mqg">
-                                            <rect key="frame" x="265" y="40" width="129" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cholesterol: -- mg/dl" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-Gv-Mqg">
+                                            <rect key="frame" x="220" y="34" width="174" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -802,6 +917,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cholesterol" destination="0hR-Gv-Mqg" id="fTc-mS-oMX"/>
                                     <outlet property="date" destination="gri-fM-91U" id="6qF-ix-Np3"/>
                                     <outlet property="exerciseTime" destination="dpu-FA-6YH" id="TgL-3G-RIg"/>
                                     <outlet property="feet" destination="ZeB-cQ-HFz" id="c5b-Xw-wxu"/>
@@ -816,11 +932,17 @@
                             <outlet property="delegate" destination="0gL-na-fY3" id="WlO-ge-C2m"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Wellness Check Log" id="Uaw-Wm-Gzh"/>
+                    <navigationItem key="navigationItem" title="Wellness Check Log" id="Uaw-Wm-Gzh">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrowshape.turn.up.backward.fill" catalog="system" id="BZg-Nz-JFz">
+                            <connections>
+                                <action selector="backTapped:" destination="0gL-na-fY3" id="Egz-0R-bUG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SaV-D7-ftO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="-587"/>
+            <point key="canvasLocation" x="2995.6521739130435" y="-587.27678571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="74f-d3-2S2">
@@ -828,7 +950,7 @@
                 <navigationController id="fsC-82-GLE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="iEo-OY-pM8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kih-AA-3dT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -858,8 +980,12 @@
             <point key="canvasLocation" x="757" y="35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oPf-ok-YAv"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="DiaBuddy Icon" width="941" height="913"/>
+        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
         <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
         <image name="calendar-icon" width="3870" height="3520"/>
         <image name="figure.walk" catalog="system" width="95" height="128"/>
