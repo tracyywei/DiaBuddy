@@ -13,6 +13,7 @@
 		DC0DC17026BADA23004E7A8D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC16F26BADA23004E7A8D /* TestViewController.swift */; };
 		DC0DC17226BADA43004E7A8D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC17126BADA43004E7A8D /* ResultsViewController.swift */; };
 		DC0DC17426BADA5C004E7A8D /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DC17326BADA5C004E7A8D /* LogTableViewController.swift */; };
+		DC4126DA26BC624F0084C619 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4126D926BC624F0084C619 /* ResourcesViewController.swift */; };
 		DC9165E126BB0A5B0072BC0B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9165E026BB0A5B0072BC0B /* Recipe.swift */; };
 		DC9165E326BB0D9F0072BC0B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9165E226BB0D9F0072BC0B /* Exercise.swift */; };
 		DC9EBB9B26B9AFE50088B27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EBB9A26B9AFE50088B27F /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		DC0DC16F26BADA23004E7A8D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		DC0DC17126BADA43004E7A8D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		DC0DC17326BADA5C004E7A8D /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
+		DC4126D926BC624F0084C619 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		DC9165E026BB0A5B0072BC0B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		DC9165E226BB0D9F0072BC0B /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		DC9EBB9726B9AFE50088B27F /* DiaBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				DC9165E026BB0A5B0072BC0B /* Recipe.swift */,
 				DC9165E226BB0D9F0072BC0B /* Exercise.swift */,
 				DCFF2CFC26BB85C7000F3539 /* TestResultsViewController.swift */,
+				DC4126D926BC624F0084C619 /* ResourcesViewController.swift */,
 			);
 			path = DiaBuddy;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				DC0DC17226BADA43004E7A8D /* ResultsViewController.swift in Sources */,
 				DC0DC16A26BAD9E9004E7A8D /* WellnessViewController.swift in Sources */,
 				DC9EBBA526B9AFE50088B27F /* DiaBuddy.xcdatamodeld in Sources */,
+				DC4126DA26BC624F0084C619 /* ResourcesViewController.swift in Sources */,
 				DC0DC16C26BAD9FC004E7A8D /* RecommendViewController.swift in Sources */,
 				DC9165E126BB0A5B0072BC0B /* Recipe.swift in Sources */,
 				DCFF2CFD26BB85C7000F3539 /* TestResultsViewController.swift in Sources */,
