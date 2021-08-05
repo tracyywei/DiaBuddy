@@ -15,6 +15,7 @@ class DiagnosticViewController: UIViewController {
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var restartButton: UIButton!
     
     var score = 0       // >= 5: high risk or diabetic symptoms
     var questionCount = 0
@@ -34,12 +35,18 @@ class DiagnosticViewController: UIViewController {
         questionCount = 0
         questionNum.text = "Question \(questionCount+1)"
         questionLabel.text = "\(questions[questionCount])"
+        restartButton.isHidden = true
+        yesButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+        noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+        messageLabel.isHidden = true
+        nextButton.isHidden = true
     }
     
     @IBAction func yesTapped(_ sender: UIButton) {
         if questionCount != 4 {
             score += 1
         }
+        nextButton.isHidden = false
         yesButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         messageLabel.isHidden = false
         lastQ(currentNum: questionCount)
@@ -49,6 +56,7 @@ class DiagnosticViewController: UIViewController {
         if questionCount == 4 {
             score += 1
         }
+        nextButton.isHidden = false
         noButton.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         messageLabel.isHidden = false
         lastQ(currentNum: questionCount)
@@ -56,36 +64,41 @@ class DiagnosticViewController: UIViewController {
     
     @IBAction func nextQ(_ sender: UIButton) {
         
-        questionCount += 1
-        questionNum.text = "Question \(questionCount+1)"
-        questionLabel.text = "\(questions[questionCount])"
-        yesButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
-        noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
-        messageLabel.isHidden = true
-        
         if questionCount == 6 {
             nextButton.isHidden = true
+        }
+        else {
+            questionCount += 1
+            questionNum.text = "Question \(questionCount+1)"
+            questionLabel.text = "\(questions[questionCount])"
+            yesButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+            noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+            messageLabel.isHidden = true
         }
     }
     
     func lastQ(currentNum : Int) {
         if currentNum == 6 {
+            restartButton.isHidden = false
             performSegue(withIdentifier: "moveToResults", sender: nextButton)
         }
     }
 
+    @IBAction func restartTest(_ sender: UIButton) {
+        questionCount = 0
+        score = 0
+        questionNum.text = "Question \(questionCount+1)"
+        questionLabel.text = "\(questions[questionCount])"
+        restartButton.isHidden = true
+        yesButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+        noButton.backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.4980392157, blue: 0.8, alpha: 1)
+        messageLabel.isHidden = true
+        nextButton.isHidden = true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! ResultsViewController
             destinationVC.score = score
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -32,7 +32,10 @@ class ResultsViewController: UIViewController {
         
     }
     
-
+    @IBAction func backTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
